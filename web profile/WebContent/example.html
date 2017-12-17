@@ -1,0 +1,632 @@
+<!--
+Author: Steeve Issac Saju
+Author Email: steeveissacsaju@gmail.com
+License: To Be Used Only By Approval Of Author
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+  
+  <link rel="stylesheet" href="css/slideshow.css">
+
+<title>Hillsideview</title>
+<style >
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5FFFA;
+}
+article {
+
+
+
+}
+/*.container-fluid{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 2cm;
+}*/
+
+.tp{
+z-index: 1;}
+.tp ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2A4C00;
+     position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.tp li {
+    float: right;
+}
+.tp li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.tp li a:hover {
+    background-color: #B7E57F;
+}
+
+
+
+
+.header {
+
+ background:url("img/tr.jpg");
+  padding: 2.2em;  
+margin: 0;
+
+    
+   
+  
+}
+
+.header h1{
+color: white;
+font-style: italic;
+font-family: sans-serif;
+
+}
+.input-group-btn{
+float: right;
+clear: right;
+bottom: 14px;
+left: 0px;
+position:relative;
+margin: 0;
+
+}
+
+
+.search_bar input[type="text"]{
+  position:relative;
+bottom: 48px;
+left: -16px;
+float: right;
+clear: right;
+width:13%;
+margin: 0;
+background-color:white; 
+color:grey;
+    
+
+}
+
+.btn1 {
+   
+   position:absolute;
+     float: left;
+    
+     top:100px;
+ 
+     color: white;
+     background-color: #4CAF50;
+     border: none;
+}
+
+.dropdown {
+    positiion: absolute;
+    float: right;
+    
+     left: -5px;
+     margin: 0;
+     
+      
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    position:relative;
+     bottom: 34px;
+     left: -19px;
+     margin: 0;
+     float: right;
+    display: inline-block;
+    border: none;
+    
+    cursor: pointer;
+    
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+   margin:0;
+  padding:0;
+  
+    background-color: #f9f9f9;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 14px 16px;
+    
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    top: -14px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.jumbotron {
+background-color: #B2EBF2;
+margin: 0;
+  padding: 0;
+}
+.na nav {
+    float: left;
+    max-width: 170px;
+    margin: 0;
+    padding: 1em;
+   
+}
+
+
+
+.na li{
+color: blue;
+ padding: 8px;
+}
+.na ul{
+
+ list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.na li a{
+    display: block;
+     font:  bold 12px/30px Georgia, serif;
+    color: white;
+    text-align: justify;
+    padding: 16px 14px;
+    text-decoration: none;
+    background-color: #dddddd;
+}
+.na li a:hover {
+    background-color: #B7E57F;
+}
+
+/* article {
+    margin-left: 280px;
+    border-left: 3px solid #ddd;
+    margin-right: 250px;
+    border-right: 3px solid #ddd;
+    padding: 1em;
+    overflow: hidden;
+border:1px solid white;
+} */
+
+.margspace{
+
+margin-left: 90px;
+
+
+}
+
+div.lick-to-top span {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+div.lick-to-top::after span{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+
+div.click-to-top span {display: none; position: relative; bottom: 0;  background: #333; color: #fff; 
+text-align: center;
+    border-radius: 6px;
+     
+    text-align: center;
+    z-index: 1;
+    left: 0;right: 0;
+}
+div.click-to-top:hover span {
+display: block;
+visibility: visible;
+ }
+.click-to-top img{
+
+max-width: 100%;
+height: auto;
+display: block;
+margin-right: 250px;
+    border-right: 3px solid #ddd;
+    margin: auto;
+    width: 50%;
+     border: 3px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.floating-box .btn btn-info{
+
+align-content: center;
+}
+
+
+.floating-box {
+
+float: right;
+clear: right;
+    width: 325px;
+    padding: 15px;
+    background-color: rgb(204, 255, 144);
+ text-align: center;
+ 
+}
+#demo{
+
+color: rgb(255,82,82);
+}
+.spl{color: blue;}
+
+.floating-box img{
+top: 26px;
+width: 100%;
+height: auto;
+border: 3px white;
+    border-radius: 4px;
+display: block;
+    margin: auto;
+    padding: 2em;
+
+    
+   
+}
+
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: #2A4C00;
+    clear: left;
+    text-align: center;
+}
+.search-form{
+  position:absolute;
+  display:none;
+    left: 0;
+    right: 0;
+    padding: 40px 15px;
+    margin: 0px;
+    background:  rgb(204, 255, 144);
+     z-index: 2;
+}
+
+
+.form-group {
+ min-width: 960px;
+  position:absolute; 
+     top:50%;
+      left:    50%;
+     width:       100px;      /* The fixed width... */
+    height:      100px; 
+     margin-left: -80px;     /* Shift over half the width */
+    margin-top:  -15px;
+         /* Shift over half the width */
+   
+    
+
+}
+#sform {
+ border: 0;
+ outline: 0;
+    background: transparent;
+    border-bottom: 2px solid black;
+    width: 100px;
+}
+
+
+
+</style>
+
+<script type="text/javascript">
+
+
+
+
+$( document ).ready(function() {
+	
+	//var flag = 0;
+ $('#ffc,#bb').click( function(){
+	 
+	  $('.search-form').slideToggle(1000);
+      $('#ffc').toggle();
+     $('.dropdown').toggle();
+     
+     
+     $('.btn1').clic
+	  
+	 //flag = 1;
+ }); 
+ //if(flag==1)
+	//{
+	// $(window).click(function() {
+		//	$('.search-form').hide();
+			//	});}
+
+
+ $('.btn1').click( function(){
+	 
+	 window.location.href = "comments.jsp";
+	 
+ });
+ 
+ 
+//Sliseshow
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); //  image every 2 seconds change
+}//endslideshow
+
+
+});
+
+function load1()
+{
+	
+var xh=new XMLHttpRequest();
+var ul="results.jsp";
+
+xh.open("POST", ul, true);
+xh.send();
+
+xh.onreadystatechange=function(){
+if(xh.readyState==4 && xh.status==200)
+
+	{
+
+	}
+else         {
+
+	window.location="error.html";
+
+             }
+      };
+ }
+
+
+
+
+
+</script>
+</head>
+<body>
+
+<div class="tp">
+<ul>
+  <li><a class="active" href="example.html">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Rooms</a></li>
+  <li><a class="active" href="index.jsp">Go Back</a></li>
+
+</ul></div>
+  <div class="header">
+  <h1>Hillsideview</h1>
+    <div class="search_bar">
+     
+<div class="input-group-btn">
+        <button class="btn btn-default" id="bb" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </div>
+<input type="text"  class="form-control" id="ffc" placeholder="Search" name="search" maxlength="0">
+
+
+<button  class="#">Reveiw</button>
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="#">Sign Up</a>
+    <a href="#">Sign In</a>
+    <a href="#">Staff Login</a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<div class="search-form"  >
+<form  class="form-inline " action="" id="">
+  <div class="form-group">
+      <input type="text"   id="sform" placeholder="&ensp;&emsp; Search" >
+  <button type="button" onclick="load1()" class="btn btn-sucess" ><i class="fa fa-search" aria-hidden="true"></i></button>
+  </div>
+</form></div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="img/boats.jpg" style="width:100%">
+  <div class="text">View One</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="img/people.jpg" style="width:100%">
+  <div class="text">View Two</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="img/fall.jpg" style="width:100%">
+  <div class="text">View Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+ </div> 
+<!-- END SLIDE -->
+
+
+<div class="jumbotron">
+   <div class="container">
+      
+      <p>This is the main website for hillsideview hotel.
+      Also checkout our various branches at other destinations for staying and experience the best during travel.</p>
+      <p><a class="btn btn-success btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+   </div>
+</div>
+
+<div class="container-fluid">
+<div class="floating-box">
+<h3 class="spl">Specials</h3>
+<img alt="" src="img/fdd.jpg" width=250 height=200 >
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Read More...</button>
+<div id="demo" class="collapse" >
+<h4>Daily Happy Hour Specials! 4pm-7pm</h4>
+1/2 Off All Basic Sushi Rolls! Drink and Appetizer Specials!
+Wednesday Extended Happy Hour until close. (Dine-In Only)
+   
+  </div>
+
+</div>
+<div class="na">
+<nav>
+  <ul>
+ <li><h3>Gallery</h3></li>
+ 
+    <li style="list-style-type:square"><a href="#">&raquo;Reviews</a>
+    </li>
+    <li><a href="#">&raquo;Tips</a></li>
+    <li><a href="#">&raquo;Decorations</a></li>
+    
+  </ul>
+</nav>
+</div>
+<div class="container">
+   
+   <div class="row">
+      <div class="col-md-3">
+         <h2>City</h2>
+         <p>Make the most of your time.Cities are beautiful and unique. They demand every second you can spare. So when it comes to choosing a break hotel, location is everything. Staying centrally means no extra expenses or travel costs. </p>
+         <p><a class="btn btn-danger" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-3">
+         <h2>Dishes</h2>
+         <p>You always love to eat something again and again.Most of the time it's not the same is it? At the heart of any great dish lies quality ingredients, or often a singular ingredient that can really make the meal delicious and exciting. </p>
+         <p><a class="btn btn-danger" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      </div>
+     <div class="row">
+    <div class="margspace">
+      <div class="col-md-3">
+         <h2>Gorgeous Views</h2>
+         <p>The skyline of the bustling metropolis, the white sandy beach and the endless blue sea, the charming mountain panorama. </p>
+         <p><a class="btn btn-danger" href="#" role="button">View details &raquo;</a></p>
+      </div>
+       <div class="col-md-3">
+         <h2>Room Amenities</h2>
+         <p>All 68 rooms offer free WiFi, minibars, and flat-screen TVs with digital channels. Guests will also find room service, hair dryers and free parking</p>
+         <p><a class="btn btn-danger" href="#" role="button">View details &raquo;</a></p>
+      </div>
+       
+  </div>
+   </div>
+</div>
+
+<hr>
+
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<!-- <article> -->
+<div class="click-to-top">
+<img alt="" src="img/hillsid.jpg" width="500" height="300" class="img-rounded">
+<span><i>Hotel Front View</i></span>
+</div>
+
+  <h2>Hotel Hillsideview</h2>
+  <hr>
+  <p>Hillsideview hotel is the most comfortable hotel
+   you can find in munnar.
+   Here you can enjoy beautiful scenery at affordable cost.  
+   Located on a mountain hill in munnar, it has 
+  been a major destination
+   for tourists for many years.It's history and it's services makes you feel right at home.It also 
+   offers world class food facilities,during both day and night.</p>
+<!-- </article> -->
+</div>
+
+</div></div>
+</div>
+
+<footer>
+<p style="text-align:center">&copy 2017 Hillsideview Hotel Page. All Rights Reserved | Designed by Steeve Issac</p>
+</footer>
+
+
+</body>
+</html>
