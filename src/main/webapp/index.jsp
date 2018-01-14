@@ -3,8 +3,6 @@ Author: Steeve Issac Saju
 Author Email: steeveissacsaju@gmail.com
 License: To Be Used Only By Approval Of Author
 -->
-
-<!DOCTYPE html>
 <html>
 <head>
 <title>Steeve Issac</title>
