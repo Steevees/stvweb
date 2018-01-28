@@ -19,6 +19,14 @@ License: To Be Used Only By Approval Of Author
 <!-- //END CDN -->
 
 <link rel="stylesheet" href="css/first.css">
+<!-- CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- CDN END -->
+ 
+  
+  <script src="js/popup.js"></script>
+  
   <script src="js/firstscript.js"></script>
   
   <script src="js/bootstrap.min.js"></script>
@@ -40,12 +48,12 @@ License: To Be Used Only By Approval Of Author
   <div style="margin: 24px 0;">
     <a href="https://www.instagram.com/steeveissac/"><i class="fa fa-instagram"></i></a> 
     <a href="https://twitter.com/SteeveIssac"><i class="fa fa-twitter"></i></a>  
-    <a href="www.linkedin.com/in/steeve-issac-saju"><i class="fa fa-linkedin"></i></a>  
+   <!--  <a href="www.linkedin.com/in/steeve-issac-saju"><i class="fa fa-linkedin"></i></a> -->  
     <a href="https://www.facebook.com/steeve.issac"><i class="fa fa-facebook"></i></a> 
  </div>
  
  <p>steeveissacsaju@gmail.com</p>
- <p><button>Contact</button></p>
+ <p><button  class="cardbutton" >Contact</button></p>
 </div>
     </div>
   
@@ -54,43 +62,72 @@ License: To Be Used Only By Approval Of Author
  <div class="alert alert-warning">
   <p>
   
-I like to create innovative designs,so I do offer design 
-help and complete development projects which are within my expertise and consider interesting.Feel free 
+I like to create innovative designs,so I do offer some 
+help with projects which are within my expertise and consider interesting.Feel free 
 to contact me via e-mail and i will get back to you. 
   </p>
 </div>
  </div>
 
-<div class="col-sm-8">
- <h2>Leave A Comment</h2>
+
+ <div class="col-sm-8">
+ <h2>Send A Feedback</h2>
   <p>
   </p>
-  <form >
+  <form>
     <div class="form-group">
-      <label for="comment">Comment:</label>
-      <textarea class="form-control" rows="5" id="comment" ></textarea>
+      <label for="comment">Comment<sup class="star">&#x2605;</sup></label>
+       
+      <textarea class="form-control" rows="5" id="comment" name="comment" required="required"></textarea>
       
+      <p id="commenttrue"></p>
       <br>
-      <label for="comment">Name:&nbsp;</label><input class="form-control" type="text" id="usr" placeholder="Your name.." required="required">
-     <br> <button type="button" onclick="sm()" class="btn btn-warning">Send</button>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" id="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <p id="alrt"></p>
+    </div>
+   
+  </div>
+
+</div>
+      
+      <label for="comment">Name&nbsp;</label><input class="form-control" type="text" id="usr" name="usr" placeholder="Your name" >
+    
+      <br>
+     
+     <label for="comment">E-Mail<sup class="star">&#9733;</sup>&nbsp;</label><input class="form-control" type="email" id="email" name="email" required="required" placeholder="Your E-mail Address" >
+     <p id="mailtrue"></p>
+     <br> <br> <button type="button"  id="btsbt" class="btn btn-warning">Send</button>
+     <button class="buttonload" id="btsndng">
+  <i class="fa fa-refresh fa-spin" ></i>Sending
+</button>
     </div>
   </form>
 <p id="respon"></p>
  </div>
 
-<div class="col-sm-8">
-<button class="button" onclick="nxt()" ><span>Check Out My Demo Pages</span></button>
+<div class="col-sm-12">
+
+
+<button class="button" id="btnxt" ><span>Check Out My Demo Pages</span></button>
 </div>
-
- </div>
-
-
+</div>
 <hr>
 <div>
+
 <footer>
 <p style="text-align:center">&copy 2017 Website Profile Page. All Rights Reserved | Designed by Steeve Issac</p>
 </footer>
 
 </div>
+
+
 </body>
 </html>
