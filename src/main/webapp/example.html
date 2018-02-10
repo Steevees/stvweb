@@ -190,13 +190,6 @@ background-color: #B2EBF2;
 margin: 0;
   padding: 0;
 }
-.na nav {
-    float: left;
-    max-width: 170px;
-    margin: 0;
-   
-}
-
 
 
 .na li{
@@ -215,27 +208,14 @@ color: blue;
      font:  bold 12px/30px Georgia, serif;
     color: white;
     text-align: justify;
-    padding: 14px 14px;
+    padding: 12px 14px;
     text-decoration: none;
     background-color: #dddddd;
 }
 .na li a:hover {
     background-color: #B7E57F;
 }
-
-#margspace{
-
-margin-left: 108px;
-
-
-} 
-
-#margspace2{
-
-margin-left: 25px;
-
-
-} 
+ 
 
 
 div.click-to-top span {
@@ -280,13 +260,13 @@ align-content: center;
 
 .floating-box {
 
-  position:absolute;
-  float: right;
-  clear: right;
-  width: 425px;
-  padding: 15px;
-  background-color: rgb(204, 255, 144);
-  text-align: center;
+  
+   /*  float: right;
+    clear: right;   */
+    width: 350px; 
+    padding: 15px;
+    background-color: rgb(204, 255, 144);
+ text-align: center;
  
 }
 
@@ -447,11 +427,11 @@ else         {
 
 <div class="tp">
 <ul>
-  <li><a class="active" href="example.html">Home</a></li>
+ 
   <li><a href="#">Rooms</a></li>
   <li><a href="login.jsp">Sign In</a></li>
   <li><a href="usersignup.jsp">Sign Up</a></li>
-  <li><a class="active" href="index.jsp">Go Back</a></li>
+  <li><a class="active" href="index.jsp">Home</a></li>
 
 </ul></div>
   <div class="header">
@@ -525,24 +505,12 @@ else         {
    </div>
 </div>
 
-<div class="container-fluid">
 
-<div class="na">
-<nav>
-  <ul>
- <li><h3>Gallery</h3></li>
- 
-    <li style="list-style-type:square"><a href="#">&raquo;Reviews</a>
-    </li>
-    <li><a href="#">&raquo;Tips</a></li>
-    <li><a href="#">&raquo;Decorations</a></li>
-    
-  </ul>
-</nav>
-</div>
-<div class="container-fluid">
-   
-   <div class="row" id="detail">
+<div class="container">
+
+
+    <div class="row">
+   <div class="row">
       <div class="col-md-3">
          <h2>City</h2>
          <p>Make the most of your time.Cities are beautiful and unique. They demand every second you can spare. So when it comes to choosing a break hotel, location is everything. Staying centrally means no extra expenses or travel costs. </p>
@@ -552,10 +520,18 @@ else         {
          <h2>Dishes</h2>
          <p>You always love to eat something again and again.Most of the time it's not the same is it? At the heart of any great dish lies quality ingredients, or often a singular ingredient that can really make the meal delicious and exciting. </p>
          <p><a class="btn btn-danger" href="#" role="button">View details &raquo;</a></p>
+         
+         
       </div>
-     
+      
+       <div class="col-md-3">
+         <h2>Events</h2>
+         <p>For family reunions, birthdays and all kinds of personal celebrations, the Hillsideview hotel offers a unique and very special environment.Your guests will enjoy the casual yet luxurious surroundings and your celebration will be a memorable occasion.</p>
+         <p><a class="btn btn-danger" href="#" role="button">View details &raquo;</a></p>
+      </div>
       <div class="col-md-3">
- <div class="floating-box">
+        
+        <div class="floating-box">
 <h3 class="spl">Specials</h3>
 <img alt="" src="img/fdd.jpg" width=250 height=200 >
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Read More...</button>
@@ -563,40 +539,69 @@ else         {
 <h4>Daily Happy Hour Specials! 4pm-7pm</h4>
 1/2 Off All Basic Sushi Rolls! Drink and Appetizer Specials!
 Wednesday Extended Happy Hour until close. (Dine-In Only)
- </div>
+   
+  </div>
 </div>
+
       </div>
+     
+         
       </div>
-      
      <div class="row" id="margspace">
 
       <div class="col-md-3">
          <h2>Gorgeous Views</h2>
-         <p>The skyline of the bustling metropolis, the white sandy beach and the endless blue sea, the charming mountain panorama.Wake up to the beatiful mountain rivers and landscapes.</p>
+         <p>The skyline of the bustling metropolis, the white sandy beach and the endless blue sea, the charming mountain panorama. </p>
          <p><a class="btn btn-danger" href="#" role="button">View details &raquo;</a></p>
       </div>
-       <div class="col-md-3" id="margspace2">
+       <div class="col-md-3">
          <h2>Room Amenities</h2>
-         <p>All 68 rooms offer free WiFi, minibars, and flat-screen TVs with digital channels. Guests will also find room service, hair dryers and free parking provided free of cost during their time of stay.</p>
+         <p>All 68 rooms offer free WiFi, minibars, and flat-screen TVs with digital channels. Guests will also find room service, hair dryers and free parking</p>
          <p><a class="btn btn-danger" href="#" role="button">View details &raquo;</a></p>
       </div>
-   
+       <div class="col-md-3">
+         <h2>Packages</h2>
+         <p>Book a Hillsideview adventure package from 2 days to 2 weeks or more. Experience your own piece of pure Kerala wildlife at its very best.</p>
+         <p><a class="btn btn-danger" href="#" role="button">View details &raquo;</a></p>
+      </div>
+   </div>
    </div>
 
-</div><!-- container end -->
-</div><!-- fluid end -->
+</div>
+
+
+
+<!-- fluid end -->
 
 <hr>
 
 <div class="container">
 <div class="row">
-<div class="col-md-12">
+
+  <div class="col-md-3">
+  <div class="na">
+   
+  <ul>
+  <li><h3>Gallery</h3></li>
+ 
+    <li style="list-style-type:square"><a href="#">&raquo;Reviews</a>
+    </li>
+    <li><a href="#">&raquo;Tips</a></li>
+    <li><a href="#">&raquo;Decorations</a></li>
+    
+   </ul>
+   
+   </div>
+        </div>
+<div class="col-md-9">
 <!-- <article> -->
 <div class="click-to-top">
 <img alt="" src="img/hillsid.jpg" width="500" height="300" class="img-rounded">
 <span><i>Hotel Front View</i></span>
 </div>
-
+</div>
+<div class="row">
+<div class="col-md-12">
   <h2>Hotel Hillsideview</h2>
   <hr>
   <p class="contents">Hillsideview hotel is the most comfortable hotel
@@ -608,7 +613,7 @@ Wednesday Extended Happy Hour until close. (Dine-In Only)
    offers world class food facilities,during both day and night.</p>
 <!-- </article> -->
 </div>
-
+</div>
 </div></div>
 
 

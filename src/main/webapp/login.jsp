@@ -14,7 +14,7 @@
       body{
   padding: 30px;
   background-image: url(data:image/png;base64,...==);
-  background-color: #C6FF00;
+  background-color: #558B2F;
   
   } 
 a{ 
@@ -27,8 +27,7 @@ ul{
 .box{ 
   position: relative;
   z-index: 1;
-  width: 456px;
-  height: 380px; 
+
   margin:50px auto 0;
   text-align: center;
   color:#fff;
@@ -89,7 +88,7 @@ ul{
 }
 .tag:after,
 .tag:before{
-  position:absolute;
+  position:relative;
   left:0; 
   content: ""; 
   width: 100%; 
@@ -298,6 +297,9 @@ form .btn:hover{
 </head>
 
 <body>
+<div class="container">
+<div class="row">
+
   <div class="box">
   <form name="myform" id="myform" action="example.html" >
     <div class="tag">SIGN IN</div>
@@ -331,7 +333,11 @@ form .btn:hover{
   
   
   <h3 class="msg">  </h3>
+</div>  
 </div>
+</div>
+
+
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
   

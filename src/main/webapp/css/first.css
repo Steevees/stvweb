@@ -60,9 +60,9 @@ button:hover, a:hover {
   text-align: center;
   font-size: 28px;
   padding : 1px;
-  width:95%;
-  margin-left:24px;
- 
+  width:100%;
+
+  align-content:center;
   transition: all 0.5s;
   cursor: pointer;
   
@@ -184,7 +184,7 @@ textarea {
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {padding: 6px 16px;}
 
 
 
